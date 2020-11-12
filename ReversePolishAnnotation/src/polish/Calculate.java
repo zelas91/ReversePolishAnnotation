@@ -136,11 +136,11 @@ public class Calculate {
 	}
 
 	// Считает выражение, записанное в обратной польской нотации
-	public static double calculate(double x, String sIn) {
+	public static double calculate(double x, String expression) {
 		String sTmp;
 		double old = x;
 		Deque<Double> stack = new ArrayDeque<Double>();
-		StringTokenizer st = new StringTokenizer(sIn);
+		StringTokenizer st = new StringTokenizer(expression);
 		while (st.hasMoreTokens()) {
 
 			sTmp = st.nextToken().trim();
